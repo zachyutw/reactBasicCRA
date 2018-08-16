@@ -1,6 +1,7 @@
 
 
 # Basic React Project Base on CRA
+- `Repo` [git@github.com:zachyutw/reactBasicCRA.git](git@github.com:zachyutw/reactBasicCRA.git)
 ## Product Features
 * Redux
 * React-Router 
