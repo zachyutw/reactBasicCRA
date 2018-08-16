@@ -1,0 +1,137 @@
+:global(#portal) {
+    position: relative;
+    z-index: 100;
+}
+
+:global(.modalShow) {
+    overflow-y: hidden;
+}
+.modal {
+    flex: 0 0 auto;
+    top: 25vh;
+    z-index: 102;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.8s;
+    animation-name: zoom;
+    animation-duration: 0.8s;
+}
+.container {
+    z-index: 101;
+}
+.closeIcon {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    color: #666;
+    font-size: 1rem;
+    z-index: 115;
+
+}
+.segment {
+
+    background: #fff;
+    display: block;
+    margin-top: 5rem;
+    width: 60%;
+    max-width: 96%;
+
+}
+.outside {
+    position: relative;
+    padding: 1rem;
+}
+
+.bgCurtain {
+    display: flex !important;
+    position: fixed;
+    overflow-x: auto;
+    overflow-y: auto;
+    -webkit-transform-style: '';
+    transform-style: '';
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    top: 0!important;
+    left: 0!important;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em;
+    background-color: rgba(0,0,0,.85);
+    z-index: 1000;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    user-select: none;
+
+}
+
+.bgCurtain1 {
+    background: rgba(0,0,0,.7);
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    cursor: pointer;
+}
+.background {
+    background: rgba(155,155,155,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.ImgModalContaienr {
+    position: fixed;
+    display: block;
+    top: 3rem;
+    left: 3%;
+    width: 94%;
+    z-index: 150;
+    padding: 0;
+    text-align: center;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.8s;
+    animation-name: zoom;
+    animation-duration: 0.8s;
+
+}
+.imgContainerHeight {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 90%;
+}
+
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

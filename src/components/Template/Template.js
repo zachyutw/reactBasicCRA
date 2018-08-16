@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-// import s from './TemplatePage.css';
+import s from './Template.css';
 
-class TemplatePage extends Component {
+class Template extends Component {
 
     constructor(props) {
         super(props)
@@ -22,7 +22,7 @@ class TemplatePage extends Component {
         const id = 1;
         return (
         //   <div onClick={  this.handleOnClick}>
-        <div onClick={ ()=> this.handleOnClick(id)}>
+        <div className={s.templateContainer} onClick={ ()=> this.handleOnClick(id)}>
               template
           </div>
         )
@@ -39,4 +39,4 @@ const mapDispatchToProps = (dispatch)=>{
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(TemplatePage)
+export default connect(mapStateToProps,mapDispatchToProps)(Template)
