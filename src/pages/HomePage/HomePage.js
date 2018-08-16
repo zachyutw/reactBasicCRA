@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import NavBar from 'components/TopNav/NavBar/NavBar';
+import s from './HomePage.css';
+import WavingString from 'components/App/WavingString/WavingString';
 
-// import s from './TemplatePage.css';
-
-class TemplatePage extends Component {
+class HomePage extends Component {
 
     constructor(props) {
         super(props)
@@ -20,23 +21,20 @@ class TemplatePage extends Component {
     }
     render() {
         const id = 1;
-        return (
-        //   <div onClick={  this.handleOnClick}>
-        <div onClick={ ()=> this.handleOnClick(id)}>
-              template
-          </div>
+        return (<div className="ui container" >
+            {/* <NavBar /> */}
+            <WavingString className={s.highLight} text="How Are You Todayaaaa"/>
+            To get started, edit src/App.js and save to reload.
+        </div>
         )
     }
 }
 
 const mapStateToProps = (state) => {
-  
     return {  }
 }
 const mapDispatchToProps = (dispatch)=>{
-    return {
-      
-    }
+    return {}
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(TemplatePage)
+export default connect(mapStateToProps,mapDispatchToProps)(HomePage)

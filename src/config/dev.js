@@ -2,8 +2,15 @@
 //dev.js don't commit it
 module.exports = {
   // roroApi: 'http://dev.roro.one/api',
-   roroApi: 'https://roro.one/api',
-   amapApi:'bfbb0894eb4cf4dfb933e21b53e5a4b1'
+
+   firebaseConfig:{
+    apiKey: "AIzaSyCk5LT9K3L7p-FxhNxWoJhyafsr6AgLsVs",
+    authDomain: "zachcodingman201807.firebaseapp.com",
+    databaseURL: "https://zachcodingman201807.firebaseio.com",
+    projectId: "zachcodingman201807",
+    storageBucket: "",
+    messagingSenderId: "134153180116"
+   }
 };
 
   /** prod keys 

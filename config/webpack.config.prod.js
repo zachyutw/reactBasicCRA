@@ -85,6 +85,7 @@ module.exports = {
       actions: path.resolve(__dirname,paths.appSrc+"/redux/actions"),
       reducers: path.resolve(__dirname,paths.appSrc+"/redux/reducers"),
       config: path.resolve(__dirname,paths.appSrc+"/config"),
+      js: path.resolve(__dirname,paths.appSrc+"/js")
     },
     // This allows you to set a fallback for where Webpack should look for modules.
     // We placed these paths second because we want `node_modules` to "win"
